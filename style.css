@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@100;200;300;400;500;600;700&display=swap);
+
+
+
+* {
+    user-select: none;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 5000px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 1440px;
+    height: 93px;
+    flex-shrink: 0;
+    background: #012D63;
+}
+
+.logo-header {
+    width: 100px;
+    margin-left: 168px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 29px;
+}
+
+.header-nav ul li {
+    list-style: none;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #C7C7C7;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.header-nav ul li a:hover {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-nav ul li:nth-of-type(1) {
+    width: 112px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-nav ul li:nth-of-type(2) {
+    width: 86px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-nav ul li:nth-of-type(3) {
+    width: 125px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-nav ul li:nth-of-type(4) {
+    width: 88px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-nav ul li:nth-of-type(5) {
+    width: 88px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-nav ul li:nth-of-type(6) {
+    width: 58px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.header-language {
+    margin-right: 171px;
+    color: #DCDCDC;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.header-language span {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-section {
+    display: flex;
+    width: 1440px;
+    height: 858px;
+    flex-shrink: 0;
+    background-image: url(./src/img/hero-section/background-hero.png);
+}
+
+.hero-capacity {
+    margin: 0;
+}
+
+.hero-logo-name {
+    width: 178px;
+    height: 86px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "PT Serif";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -35px;
+    margin-left: 195px;
+}
+
+.hero-logo-img {
+    width: 160px;
+    height: 120px;
+    flex-shrink: 0;
+    margin-top: 94px;
+    margin-left: 170px;
+}
+
+.hero-tittle {
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 144px;
+    margin-top: -45px;
+    margin-left: 154px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-h1 {
+    color: #FFF;
+    margin-top: -34px;
+    margin-left: 164px;
+    font-family: "Playfair Display";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-p {
+    color: #FFF;
+    margin-top: 11px;
+    margin-left: 164px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-button {
+    width: 254px;
+    height: 67px;
+    flex-shrink: 0;
+    margin-top: 38px;
+    margin-left: 164px;
+    border-radius: 10px;
+    background: #8E32C6;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
