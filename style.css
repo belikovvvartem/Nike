@@ -4,16 +4,27 @@
 
 
 
+:root {
+    scroll-behavior: smooth;
+    --button-color: #8E32C6;
+    --text-color: #FFF;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
 * {
     user-select: none;
     margin: 0 auto;
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    background: #012D63;
+    margin-top: 30px;
+}
+
+.container {
+    border-radius: 0px;
     width: 1440px;
-    height: 5000px;
+    box-shadow: var(--button-color) 0px 0px 50px 0px;
 }
 
 header {
@@ -51,7 +62,7 @@ header {
 .header-nav ul li a {
     text-decoration: none;
     color: #C7C7C7;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -59,8 +70,8 @@ header {
 }
 
 .header-nav ul li a:hover {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -106,7 +117,7 @@ header {
 .header-language {
     margin-right: 171px;
     color: #DCDCDC;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -114,8 +125,8 @@ header {
 }
 
 .header-language span {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -138,7 +149,7 @@ header {
     width: 178px;
     height: 86px;
     flex-shrink: 0;
-    color: #FFF;
+    color: var(--text-color);
     font-family: "PT Serif";
     font-size: 48px;
     font-style: normal;
@@ -157,7 +168,7 @@ header {
 }
 
 .hero-tittle {
-    color: #FFF;
+    color: var(--text-color);
     font-family: "Playfair Display";
     font-size: 144px;
     margin-top: -45px;
@@ -168,7 +179,7 @@ header {
 }
 
 .hero-h1 {
-    color: #FFF;
+    color: var(--text-color);
     margin-top: -34px;
     margin-left: 164px;
     font-family: "Playfair Display";
@@ -179,10 +190,10 @@ header {
 }
 
 .hero-p {
-    color: #FFF;
+    color: var(--text-color);
     margin-top: 11px;
     margin-left: 164px;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -196,13 +207,28 @@ header {
     margin-top: 38px;
     margin-left: 164px;
     border-radius: 10px;
-    background: #8E32C6;
-    color: #FFF;
-    font-family: Roboto;
+    background: var(--button-color);
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background: rgba(142, 50, 198, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hero-button:hover {
+    background: rgba(142, 50, 198, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .our-advantages {
@@ -221,17 +247,17 @@ header {
     width: 1110px;
     height: 396px;
     flex-shrink: 0;
-    border: 5px solid #8E32C6;
+    border: 5px solid var(--button-color);
 }
 
 .advantages-line {
     width: 1px;
     height: 346px;
-    background: #FFF;
+    background: var(--text-color);
 }
 
 .advantage h3 {
-    color: #FFF;
+    color: var(--text-color);
     text-align: center;
     font-family: "Playfair Display";
     font-size: 36px;
@@ -245,10 +271,6 @@ header {
     height: 240px;
     flex-shrink: 0;
 }
-
-
-
-
 
 .reviews-section {
     width: 1440px;
@@ -264,7 +286,7 @@ header {
     height: 65px;
     margin-bottom: 24px;
     flex-shrink: 0;
-    color: #FFF;
+    color: var(--text-color);
     text-align: center;
     font-family: "Playfair Display";
     font-size: 48px;
@@ -300,8 +322,8 @@ header {
 .review-text {
     width: 228px;
     margin-top: 49px;
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -310,7 +332,7 @@ header {
 
 .review-time {
     color: #D8D8D8;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -331,8 +353,8 @@ header {
 }
 
 .review-info p {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -342,23 +364,12 @@ header {
 .review-info span {
     display: block;
     color: #D8D8D8;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .order-section {
     display: flex;
@@ -380,7 +391,7 @@ header {
 }
 
 .order h1 {
-    color: #FFF;
+    color: var(--text-color);
     width: 100%;
     font-family: "Playfair Display";
     font-size: 48px;
@@ -394,8 +405,13 @@ header {
     height: 50px;
     flex-shrink: 0;
     border-radius: 50px;
-    background: #FFF;
+    background: var(--text-color);
     padding: 0 24px;
+    outline: none;
+}
+
+.order input:focus {
+    box-shadow: var(--button-color) 0 0 25px 10px;
 }
 
 .input-email-confirm {
@@ -421,7 +437,7 @@ header {
     cursor: pointer;
     background: transparent;
     color: #8D8D8D;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -429,9 +445,13 @@ header {
     margin-left: -125px;
 }
 
+.input-email-confirm button:hover {
+    color: var(--button-color);
+}
+
 .order input:placeholder-shown {
     color: #959595;
-    font-family: Roboto;
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -443,13 +463,15 @@ header {
     height: 68px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: #8E32C6;
-    color: #FFF;
-    font-family: Roboto;
+    background: var(--button-color);
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border: 2px solid var(--button-color);
+    box-shadow: 0 0 50px 0 var(--button-color);
 }
 
 footer {
@@ -476,8 +498,8 @@ footer {
 }
 
 .contact-item p {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -485,8 +507,8 @@ footer {
 }
 
 .contact-item a {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -512,8 +534,8 @@ footer {
 }
 
 .footer-bottom {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -535,8 +557,8 @@ footer {
 }
 
 .copyright-notice {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -545,8 +567,8 @@ footer {
 }
 
 .footer-location {
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--text-color);
+    font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -554,7 +576,7 @@ footer {
     margin-left: -380px;
 }
 
-.footer-logo{
+.footer-logo {
     margin-top: -45px;
     margin-right: -695px;
 }
@@ -571,10 +593,36 @@ footer {
     width: 178px;
     height: 86px;
     flex-shrink: 0;
-    color: #FFF;
+    color: var(--text-color);
     font-family: "PT Serif";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 50px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.scroll-button:hover {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 50px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="conteiner">
+    <div class="container">
         <header>
             <img src="./src/img/logo/logo-nike.png" alt="" class="logo-header">
             <nav class="header-nav">
@@ -20,11 +20,12 @@
                     <li><a href="#Advantages">Advantages</a></li>
                     <li><a href="#Reviews">Reviews</a></li>
                     <li><a href="#Contacts">Contacts</a></li>
-                    <li><a href="#Order">Contacts</a></li>
+                    <li><a href="#Order">Order</a></li>
                 </ul>
             </nav>
             <h1 class="header-language">Ua <span>Eng</span></h1>
         </header>
+        <hr>
         <section class="hero-section">
             <div class="hero-capacity">
                 <img src="./src/img/logo/logo-nike.png" alt="" class="hero-logo-img">
@@ -35,10 +36,10 @@
                     company
                     caт`t create such beautiful <br> sneakers as we do. <br> Good luck finding your way in the world of
                     custom sneakers.</p>
-                <button class="hero-button">Buy my Nike</button>
+                <a href="#Order"><button class="hero-button" onclick="orderMyNike()">Buy my Nike</button></a>
             </div>
         </section>
-
+        <hr>
         <section id="Benefits" class="our-advantages">
             <div class="advantages">
                 <div class="advantage">
@@ -58,11 +59,7 @@
             </div>
         </section>
 
-
-
-
-
-
+        <hr>
 
         <section id="Reviews" class="reviews-section">
             <h2>Reviews</h2>
@@ -96,30 +93,26 @@
             </div>
         </section>
 
-
-
-
-
-
-
+        <hr>
 
         <section id="Order" class="order-section">
             <div class="order">
                 <h1>Order</h1>
 
                 <div class="input-email-confirm">
-                    <input type="text" placeholder="Write your email">
+                    <input type="text" placeholder="Write your email" required>
                     <button type="button">Confirm</button>
                 </div>
 
-                <input type="text" placeholder="Your Country">
-                <input type="text" placeholder="Your City">
-                <input type="text" placeholder="Your Adress">
+                <input type="text" placeholder="Your Country" required>
+                <input type="text" placeholder="Your City" required>
+                <input type="text" placeholder="Your Adress" required>
                 <button class="order-button">Order my Nike</button>
 
             </div>
         </section>
 
+        <hr>
 
         <footer id="Contacts">
             <div class="contact-info">
@@ -138,11 +131,10 @@
             </div>
 
             <hr class="footer-line">
-
             <div class="footer-bottom">
                 <div class="footer-bottom-left">
-                <div class="copyright-notice">2022 ColoRawe @All rights reserved</div>
-                <div class="footer-location">United States</div>
+                    <div class="copyright-notice">2022 ColoRawe @All rights reserved</div>
+                    <div class="footer-location">United States</div>
                 </div>
                 <div class="footer-logo">
                     <img src="./src/img/logo/logo-nike.png" alt="" class="footer-logo-img">
@@ -152,6 +144,10 @@
         </footer>
 
     </div>
+
+    <button id="scrollToTop" class="scroll-button"><img src="./src/img/arrow/arrow.png" alt="arrow-to-top"></button>
+
+    <script src="script.js"></script>
 
 </body>
 
