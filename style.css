@@ -3,12 +3,12 @@
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@100;200;300;400;500;600;700&display=swap);
 
 
-
 :root {
     scroll-behavior: smooth;
     --button-color: #8E32C6;
-    --text-color: #FFF;
+    --font-color: #FFF;
     --font-family-roboto: 'Roboto', sans-serif;
+    --font-size: 24px;
 }
 
 * {
@@ -17,8 +17,23 @@
 }
 
 body {
-    background: #012D63;
-    margin-top: 30px;
+    background: linear-gradient(270deg, #0d1630, #1a0030, #330048);
+    background-size: 300% 300%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -63,16 +78,16 @@ header {
     text-decoration: none;
     color: #C7C7C7;
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 
 .header-nav ul li a:hover {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -118,16 +133,16 @@ header {
     margin-right: 171px;
     color: #DCDCDC;
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 
 .header-language span {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -149,7 +164,7 @@ header {
     width: 178px;
     height: 86px;
     flex-shrink: 0;
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: "PT Serif";
     font-size: 48px;
     font-style: normal;
@@ -168,7 +183,7 @@ header {
 }
 
 .hero-tittle {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: "Playfair Display";
     font-size: 144px;
     margin-top: -45px;
@@ -179,7 +194,7 @@ header {
 }
 
 .hero-h1 {
-    color: var(--text-color);
+    color: var(--font-color);
     margin-top: -34px;
     margin-left: 164px;
     font-family: "Playfair Display";
@@ -190,7 +205,7 @@ header {
 }
 
 .hero-p {
-    color: var(--text-color);
+    color: var(--font-color);
     margin-top: 11px;
     margin-left: 164px;
     font-family: var(--font-family-roboto);
@@ -206,11 +221,12 @@ header {
     flex-shrink: 0;
     margin-top: 38px;
     margin-left: 164px;
+    text-decoration: none;
     border-radius: 10px;
     background: var(--button-color);
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -253,11 +269,11 @@ header {
 .advantages-line {
     width: 1px;
     height: 346px;
-    background: var(--text-color);
+    background: var(--font-color);
 }
 
 .advantage h3 {
-    color: var(--text-color);
+    color: var(--font-color);
     text-align: center;
     font-family: "Playfair Display";
     font-size: 36px;
@@ -286,7 +302,7 @@ header {
     height: 65px;
     margin-bottom: 24px;
     flex-shrink: 0;
-    color: var(--text-color);
+    color: var(--font-color);
     text-align: center;
     font-family: "Playfair Display";
     font-size: 48px;
@@ -307,24 +323,27 @@ header {
 
 .review-card {
     display: flex;
+    text-align: start;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     background-size: cover;
-    background-position: center;
     padding: 20px;
     width: 255px;
     height: 292px;
     flex-shrink: 0;
     border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.09);
 }
 
 .review-text {
     width: 228px;
     margin-top: 49px;
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -337,12 +356,13 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 15px;
 }
 
 .review-info {
     display: flex;
-    align-items: flex-start;
-    margin-top: 47px;
+    margin-top: 67px;
+    margin-left: 10px;
 }
 
 .review-photo {
@@ -353,7 +373,8 @@ header {
 }
 
 .review-info p {
-    color: var(--text-color);
+    color: var(--font-color);
+    margin-left: 10px;
     font-family: var(--font-family-roboto);
     font-size: 14px;
     font-style: normal;
@@ -391,7 +412,7 @@ header {
 }
 
 .order h1 {
-    color: var(--text-color);
+    color: var(--font-color);
     width: 100%;
     font-family: "Playfair Display";
     font-size: 48px;
@@ -405,7 +426,7 @@ header {
     height: 50px;
     flex-shrink: 0;
     border-radius: 50px;
-    background: var(--text-color);
+    background: var(--font-color);
     padding: 0 24px;
     outline: none;
 }
@@ -452,7 +473,7 @@ header {
 .order input:placeholder-shown {
     color: #959595;
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -464,14 +485,18 @@ header {
     flex-shrink: 0;
     border-radius: 16px;
     background: var(--button-color);
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     border: 2px solid var(--button-color);
     box-shadow: 0 0 50px 0 var(--button-color);
+}
+
+.order-button:hover {
+    background: #7E32C9;
 }
 
 footer {
@@ -489,6 +514,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     margin-top: 45px;
+    margin-right: 150px;
 }
 
 .contact-item {
@@ -498,18 +524,18 @@ footer {
 }
 
 .contact-item p {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .contact-item a {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -527,14 +553,17 @@ footer {
 
 .footer-line {
     margin-top: 20px;
-    margin-left: 220px;
+    margin-left: 178px;
     width: 1110px;
     height: 1px;
     background: #9B9B9B;
 }
 
 .footer-bottom {
-    color: var(--text-color);
+    display: flex;
+    gap: 640px;
+    margin-top: 45px;
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
@@ -542,22 +571,16 @@ footer {
     line-height: normal;
 }
 
-.footer-bottom {
-    display: flex;
-    gap: 10px;
-    margin-top: 45px;
-}
-
 .footer-bottom-left {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: -24px;
-    margin-left: -120px;
+    margin-left: 513px;
 }
 
 .copyright-notice {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
@@ -567,7 +590,7 @@ footer {
 }
 
 .footer-location {
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: var(--font-family-roboto);
     font-size: 18px;
     font-style: normal;
@@ -578,7 +601,6 @@ footer {
 
 .footer-logo {
     margin-top: -45px;
-    margin-right: -695px;
 }
 
 .footer-logo img {
@@ -591,11 +613,11 @@ footer {
     margin-top: -15px;
     margin-left: 20px;
     width: 178px;
-    height: 86px;
+    height: 26px;
     flex-shrink: 0;
-    color: var(--text-color);
+    color: var(--font-color);
     font-family: "PT Serif";
-    font-size: 24px;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -603,26 +625,26 @@ footer {
 
 .scroll-button {
     position: fixed;
-    bottom: 50px;
+    bottom: 10px;
     right: 50px;
     padding: 10px 15px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: none;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     border-radius: 50px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .scroll-button:hover {
-    background: rgba( 255, 255, 255, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     border-radius: 50px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }

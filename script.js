@@ -8,11 +8,9 @@ document.querySelectorAll('.nav a').forEach(anchor => {
     });
 })
 
-// Отримати кнопку
 const scrollToTopButton = document.getElementById("scrollToTop");
 
-// Показати кнопку при прокрутці
-window.onscroll = function() {
+window.onscroll = function () {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollToTopButton.style.display = "block";
     } else {
@@ -20,10 +18,9 @@ window.onscroll = function() {
     }
 };
 
-// Прокрутка до верху
-scrollToTopButton.onclick = function() {
+scrollToTopButton.onclick = function () {
     window.scrollTo({
         top: 0,
-        behavior: "smooth" // Анімація прокрутки
+        behavior: "smooth" 
     });
 };
