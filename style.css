@@ -46,7 +46,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0;
     width: 1440px;
     height: 93px;
     flex-shrink: 0;
@@ -62,7 +61,7 @@ header {
 
 .header-nav {
     display: flex;
-    margin-right: 15px;
+    margin-right: 75px;
 }
 
 .header-nav ul {
@@ -484,6 +483,7 @@ header {
     height: 68px;
     flex-shrink: 0;
     border-radius: 16px;
+    margin-bottom: 60px;
     background: var(--button-color);
     color: var(--font-color);
     font-family: var(--font-family-roboto);
@@ -501,8 +501,7 @@ header {
 
 footer {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 1440px;
     height: 292px;
     flex-shrink: 0;
@@ -512,15 +511,14 @@ footer {
 .contact-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
     margin-top: 45px;
-    margin-right: 150px;
+    margin-bottom: 20px;
 }
 
 .contact-item {
     display: flex;
-    align-items: center;
-    margin-left: 110px;
 }
 
 .contact-item p {
@@ -552,31 +550,23 @@ footer {
 }
 
 .footer-line {
-    margin-top: 20px;
-    margin-left: 178px;
-    width: 1110px;
+    width: 100%;
     height: 1px;
     background: #9B9B9B;
 }
 
 .footer-bottom {
     display: flex;
-    gap: 640px;
-    margin-top: 45px;
+    width: 100%;
     color: var(--font-color);
     font-family: var(--font-family-roboto);
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .footer-bottom-left {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: -24px;
-    margin-left: 513px;
 }
 
 .copyright-notice {
@@ -586,7 +576,6 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: -380px;
 }
 
 .footer-location {
@@ -596,11 +585,6 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: -380px;
-}
-
-.footer-logo {
-    margin-top: -45px;
 }
 
 .footer-logo img {
@@ -648,3 +632,50 @@ footer {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 100%;
+        background: url(./src/img/hero/background-hero.png) center / cover  no-repeat;
+    }
+
+    .hero-button {
+        margin-bottom: 183px;
+    }
+
+    .our-advantages {
+        width: 100%;
+        height: 100%;
+        padding: 105px 0;
+        background: url(./src/img/advantages/background-advantages.png) center / cover  no-repeat;
+    }
+
+    .reviews-section {
+        width: 100%;
+        height: 100%;
+        padding:  0 0 115px 0 ;
+        background: url(./src/img/reviews/background-reviews.png) center / cover  no-repeat;
+    }
+
+    .order-section {
+        width: 100%;
+        height: 100%;
+        background: url(./src/img//order/background-order.png) center / cover  no-repeat;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
