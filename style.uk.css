@@ -1,0 +1,49 @@
+.header-nav ul li:nth-of-type(1) {
+    width: 198px;
+}
+
+.header-nav ul li:nth-of-type(2) {
+    width: 104px;
+}
+
+.header-nav ul li:nth-of-type(3) {
+    width: 75px;
+}
+
+.header-nav ul li:nth-of-type(4) {
+    width: 81px;
+}
+
+.header-nav ul li:nth-of-type(5) {
+    width: 103px;
+}
+
+.header-nav ul li:nth-of-type(6) {
+    width: 109px;
+}
+
+.header-language span {
+    margin-right: 171px;
+}
+
+.header-language {
+    color: var(--font-color);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.review-card .review-info {
+    margin-top: 67px;
+}
+
+.review-card:nth-of-type(3) .review-info {
+    margin-top: 37px;
+
+}
+
+.input-email-confirm button {
+    margin-left: -180px;
+}
