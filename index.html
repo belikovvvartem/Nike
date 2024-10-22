@@ -13,6 +13,19 @@
 
 <body>
 
+    <div class="custom-loader" id="loader">
+        <svg class="loading-svg" x="0px" y="0px" viewBox="0 0 30 30" height="40" width="40"
+            preserveAspectRatio="xMidYMid meet">
+            <path class="static-track" fill="none" stroke-width="4" pathLength="100"
+                d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z">
+            </path>
+            <path class="moving-line" fill="none" stroke-width="4" pathLength="100"
+                d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z">
+            </path>
+        </svg>
+    </div>
+
+
     <div class="container">
 
         <header>
@@ -80,38 +93,45 @@
         <section id="Reviews" class="reviews-section">
             <div class="reviews-title">Reviews</div>
             <div class="reviews-slider">
-                <button id="prev-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAXRJREFUWEft10tKxEAUheH/rMAHuAdFBNsVNCIIrsaJE92CEzeiK/DRig504kTdhCCIIDi5dkECRdHpJJXSipKedlf6y7mVujeixx/12MaAi63OkNyQXGwCseuS7TkzW5L0FguZtS4JzsxWgGvgVNJRKmBnnAdbLVD7kk5SADvhCtglsO5hnoGRpK+uwGicmS0Dt0CZmLM8AWNJr11hbn0UroBdARse4nG677ZTPhStcRWwB2BH0nuKxMprtMLNgbnEPlLCWpW1AnYH7P4ErDGuAub23J6kz9SJNS6rmS0A7rgYBYh7IBomaVx3U3P3XAG7ALbqLtT2e0m1+/3v4lwaZrYInM9IL29Zy1IV5b0JDt38D4QHdO0q7Ar5j5IaoOsOeQ/hBsC87SsAhhNJ/sbvAcvpt18jUwCcAGveIfwCbGYdNuckeCDpuG3H+I0XnLNpYocpYI2nkiZ/1ttXwyb4mN/UTgYxF021ZsDFJjkk9y+T+wYCoYQoixpkMwAAAABJRU5ErkJggg=="/></button>
+                <button id="prev-button"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAXRJREFUWEft10tKxEAUheH/rMAHuAdFBNsVNCIIrsaJE92CEzeiK/DRig504kTdhCCIIDi5dkECRdHpJJXSipKedlf6y7mVujeixx/12MaAi63OkNyQXGwCseuS7TkzW5L0FguZtS4JzsxWgGvgVNJRKmBnnAdbLVD7kk5SADvhCtglsO5hnoGRpK+uwGicmS0Dt0CZmLM8AWNJr11hbn0UroBdARse4nG677ZTPhStcRWwB2BH0nuKxMprtMLNgbnEPlLCWpW1AnYH7P4ErDGuAub23J6kz9SJNS6rmS0A7rgYBYh7IBomaVx3U3P3XAG7ALbqLtT2e0m1+/3v4lwaZrYInM9IL29Zy1IV5b0JDt38D4QHdO0q7Ar5j5IaoOsOeQ/hBsC87SsAhhNJ/sbvAcvpt18jUwCcAGveIfwCbGYdNuckeCDpuG3H+I0XnLNpYocpYI2nkiZ/1ttXwyb4mN/UTgYxF021ZsDFJjkk9y+T+wYCoYQoixpkMwAAAABJRU5ErkJggg==" /></button>
                 <div class="reviews-wrapper">
-                    <div class="review-card" style="background-image: url('./src/img/reviews/reviews-one.png');">
-                        <p class="review-text">Sneakers are very comfortable and well painted, nothing has worn off in a year.</p>
-                        <div class="review-time">25:11</div>
-                        <div class="review-info">
-                            <img src="./src/img/reviews/reviews-john.png" alt="John's Photo" class="review-photo">
-                            <p>John Taylor <span>With us from 2018</span></p>
+                    <div class="reviews-inner">
+                        <div class="review-card" style="background-image: url('./src/img/reviews/reviews-one.png');">
+                            <p class="review-text">Sneakers are very comfortable and well painted, nothing has worn off
+                                in a year.</p>
+                            <div class="review-time">25:11</div>
+                            <div class="review-info">
+                                <img src="./src/img/reviews/reviews-john.png" alt="John's Photo" class="review-photo">
+                                <p>John Taylor <span>With us from 2018</span></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review-card" style="background-image: url('./src/img/reviews/reviews-two.png');">
-                        <p class="review-text">I'm very happy with this color scheme. They match all my clothes.</p>
-                        <div class="review-time">05:01</div>
-                        <div class="review-info">
-                            <img src="./src/img/reviews/reviews-elizabeth.png" alt="Elizabeth's Photo" class="review-photo">
-                            <p>Elizabeth Garcia <span>With us from 2020</span></p>
+                        <div class="review-card" style="background-image: url('./src/img/reviews/reviews-two.png');">
+                            <p class="review-text">I'm very happy with this color scheme. They match all my clothes.</p>
+                            <div class="review-time">05:01</div>
+                            <div class="review-info">
+                                <img src="./src/img/reviews/reviews-elizabeth.png" alt="Elizabeth's Photo"
+                                    class="review-photo">
+                                <p>Elizabeth Garcia <span>With us from 2020</span></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review-card" style="background-image: url('./src/img/reviews/reviews-three.png');">
-                        <p class="review-text">Just right if you need to go to a party. I use them actively, the paint is super.</p>
-                        <div class="review-time">18:06</div>
-                        <div class="review-info">
-                            <img src="./src/img/reviews/reviews-tom.png" alt="Tom's Photo" class="review-photo">
-                            <p>Tom Maquare <span>With us from 2019</span></p>
+                        <div class="review-card" style="background-image: url('./src/img/reviews/reviews-three.png');">
+                            <p class="review-text">Just right if you need to go to a party. I use them actively, the
+                                paint is super.</p>
+                            <div class="review-time">18:06</div>
+                            <div class="review-info">
+                                <img src="./src/img/reviews/reviews-tom.png" alt="Tom's Photo" class="review-photo">
+                                <p>Tom Maquare <span>With us from 2019</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button id="next-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAXhJREFUWEft171KxEAUhuH3NIIg4oI3oTY2WiiKf2DjDWmvjY1XIwgi2osKIngP4t8VfO7ALISwZmdPZjBIUoYMefKdmTkTo8OXddhGj/NWp0+uT86bgHdckTknaWBmn17UaFx2nKRz4AjYNrO3NsCsOEnHwFkEvbYFZsNJmgEegeVKWi8R+OFJMBsuvFzSInALrFQwz8N7O2Y2NTArLgIHw7RugNW2wOy4CJwH7toCi+AqwGtgrZbglpl9p8zBYrgInAOugI0K5gHYSwEWxUXgLHAZFsW0wGScpLAKvVcArtcG3wMHTQlOg5NX1jCuscT/Bpe7rCG1fTP7+i3Z5OS8JZVUfkF4cJLGbSWhnSXtdcWSkxS6xLhNOLnPFsFFWPfaVzgFd7Lxd/bIFA+bT8BSrdHvmtm7Z0FlnXOSToDTyjF903PILPmDcwEctv1/CMCsyY2+WNJC086fWuIiuNSXT3qux01K6M8avxdWbEG0AVXH9nPOm+QPRo+KKNA/j9QAAAAASUVORK5CYII="/></button>
+                <button id="next-button"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAXhJREFUWEft171KxEAUhuH3NIIg4oI3oTY2WiiKf2DjDWmvjY1XIwgi2osKIngP4t8VfO7ALISwZmdPZjBIUoYMefKdmTkTo8OXddhGj/NWp0+uT86bgHdckTknaWBmn17UaFx2nKRz4AjYNrO3NsCsOEnHwFkEvbYFZsNJmgEegeVKWi8R+OFJMBsuvFzSInALrFQwz8N7O2Y2NTArLgIHw7RugNW2wOy4CJwH7toCi+AqwGtgrZbglpl9p8zBYrgInAOugI0K5gHYSwEWxUXgLHAZFsW0wGScpLAKvVcArtcG3wMHTQlOg5NX1jCuscT/Bpe7rCG1fTP7+i3Z5OS8JZVUfkF4cJLGbSWhnSXtdcWSkxS6xLhNOLnPFsFFWPfaVzgFd7Lxd/bIFA+bT8BSrdHvmtm7Z0FlnXOSToDTyjF903PILPmDcwEctv1/CMCsyY2+WNJC086fWuIiuNSXT3qux01K6M8avxdWbEG0AVXH9nPOm+QPRo+KKNA/j9QAAAAASUVORK5CYII=" /></button>
             </div>
         </section>
-        
-        
+
+
 
         <hr>
 
@@ -171,6 +191,13 @@
     <button id="scrollToTop" class="scroll-button"><img src="./src/img/arrow/arrow.png" alt="arrow-to-top"></button>
 
     <script src="script.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("loader").classList.add("hidden");
+            }, 1000); 
+        });
+    </script>
 
 </body>
 

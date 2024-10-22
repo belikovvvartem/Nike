@@ -40,12 +40,12 @@ window.onclick = function (event) {
 
 
 
-const reviewsWrapper = document.querySelector('.reviews-wrapper');
+const reviewsInner = document.querySelector('.reviews-inner');
 const reviewCards = document.querySelectorAll('.review-card');
 let currentIndex = 0;
 
 function updateSliderPosition() {
-    reviewsWrapper.style.transform = `translateX(-${currentIndex * 35}%)`;
+    reviewsInner.style.transform = `translateX(-${currentIndex * 35}%)`;
 }
 
 document.querySelector('#next-button').addEventListener('click', () => {
@@ -91,3 +91,4 @@ document.querySelector('#prev-benefit').addEventListener('click', () => {
     }
     updateBenefitsSlider();
 });
+

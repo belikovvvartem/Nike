@@ -46,6 +46,13 @@
 
 
 @media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
     .container {
         width: 100%;
         max-width: 768px;
@@ -241,14 +248,24 @@
         right: 10px;
     }
 
+
+
     .reviews-slider {
         position: relative;
         display: flex;
         align-items: center;
     }
-    
+
     .reviews-wrapper {
+        width: 100%;
+        height: 450px;
+        max-width: 786px;
+        overflow: hidden;
+    }
+    
+    .reviews-inner {
         display: flex;
+        margin-top: 15px;
         transition: transform 0.5s ease-in-out;
         width: 345%; 
     }
