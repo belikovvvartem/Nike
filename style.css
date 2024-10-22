@@ -9,6 +9,7 @@
     --font-color: #FFF;
     --font-family-roboto: 'Roboto', sans-serif;
     --font-size: 24px;
+    overflow-x: hidden;
 }
 
 * {
@@ -20,6 +21,7 @@ body {
     background: linear-gradient(270deg, #0d1630, #1a0030, #330048);
     background-size: 300% 300%;
     animation: gradientAnimation 3s ease infinite;
+    overflow-x: hidden;
 }
 
 @keyframes gradientAnimation {
