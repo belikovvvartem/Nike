@@ -38,8 +38,6 @@ window.onclick = function (event) {
     }
 }
 
-
-
 const reviewsInner = document.querySelector('.reviews-inner');
 const reviewCards = document.querySelectorAll('.review-card');
 let currentIndex = 0;
@@ -52,7 +50,7 @@ document.querySelector('#next-button').addEventListener('click', () => {
     if (currentIndex < reviewCards.length - 1) {
         currentIndex++;
     } else {
-        currentIndex = 0; 
+        currentIndex = 0;
     }
     updateSliderPosition();
 });
@@ -61,7 +59,7 @@ document.querySelector('#prev-button').addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
     } else {
-        currentIndex = reviewCards.length - 1; 
+        currentIndex = reviewCards.length - 1;
     }
     updateSliderPosition();
 });
@@ -78,7 +76,7 @@ document.querySelector('#next-benefit').addEventListener('click', () => {
     if (currentBenefitIndex < advantageCards.length - 1) {
         currentBenefitIndex++;
     } else {
-        currentBenefitIndex = 0; 
+        currentBenefitIndex = 0;
     }
     updateBenefitsSlider();
 });
@@ -92,3 +90,9 @@ document.querySelector('#prev-benefit').addEventListener('click', () => {
     updateBenefitsSlider();
 });
 
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+});

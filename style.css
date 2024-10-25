@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@100;200;300;400;500;600;700&display=swap);
 
-
 :root {
     scroll-behavior: smooth;
     --button-color: #8E32C6;
@@ -382,12 +381,6 @@ header {
     line-height: normal;
 }
 
-
-
-
-
-
-
 .order-section {
     display: flex;
     justify-content: center;
@@ -661,11 +654,9 @@ footer {
     pointer-events: none;
 }
 
-/* SVG стилі */
 .loading-svg {
     --uib-size: 40px;
     --uib-color: white;
-    /* Білий колір лінії */
     --uib-speed: 1.4s;
     --uib-bg-opacity: .1;
     height: var(--uib-size);
@@ -700,3 +691,21 @@ footer {
         stroke-dashoffset: -100;
     }
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #012D63;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--button-color); 
+    border-radius: 100px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background: #7E32C9;
+}
+

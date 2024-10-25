@@ -112,14 +112,12 @@
         width: 80%;
     }
 
-
     .close {
         margin-left: 25px;
         position: absolute;
         color: white;
         font-size: 35px;
     }
-
 
     .hero-section {
         width: 100%;
@@ -165,17 +163,98 @@
         width: 100%;
         max-width: 768px;
         margin: 0 auto;
+        height: 300px;
     }
 
     .advantages {
-        width: 80%;
+        width: 90%;
+        height: 200px;
+        border: 5px solid var(--button-color);
+    }
+
+    .advantage h3 {
+        font-size: 25px;
+    }
+    
+    .advantage img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .advantages-line {
+        margin: 5px;
+        width: 1px;
+        height: 150px;
     }
 
     .reviews-section {
         width: 100%;
         max-width: 768px;
         margin: 0 auto;
+    }  
+    
+    .reviews-slider {
+        position: relative;
+        display: flex;
+        align-items: center;
     }
+
+    .reviews-wrapper {
+        width: 100%;
+        height: 450px;
+        max-width: 786px;
+    }
+    
+    .reviews-inner {
+        display: flex;
+        margin-top: 15px;
+        transition: transform 0.5s ease-in-out;
+        width: 345%; 
+    }
+    
+    .review-card {
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        background-size: cover;
+        padding: 20px;
+        width: 255px;
+        height: 292px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    #prev-button, #next-button {
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    
+    #prev-button {
+        left: 10px;
+    }
+    
+    #next-button {
+        right: 10px;
+    }
+
+    #prev-button, #next-button {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
 
     .order-section {
         width: 100%;
@@ -246,99 +325,9 @@
         right: 10px;
     }
 
-
-
-    .reviews-slider {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-    .reviews-wrapper {
-        width: 100%;
-        height: 450px;
-        max-width: 786px;
-    }
-    
-    .reviews-inner {
-        display: flex;
-        margin-top: 15px;
-        transition: transform 0.5s ease-in-out;
-        width: 345%; 
-    }
-    
-    .review-card {
-        display: flex;
-        text-align: start;
-        flex-direction: column;
-        background-size: cover;
-        padding: 20px;
-        width: 255px;
-        height: 292px;
-        flex-shrink: 0;
-        border-radius: 15px;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    #prev-button, #next-button {
-        background: rgba( 255, 255, 255, 0.35 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 3.5px );
-        -webkit-backdrop-filter: blur( 3.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        color: #fff;
-        cursor: pointer;
-        position: absolute;
-        transform: translateY(-50%);
-        z-index: 10;
-    }
-    
-    #prev-button {
-        left: 10px;
-    }
-    
-    #next-button {
-        right: 10px;
-    }
-
-    #prev-button, #next-button {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .our-advantages {
-        height: 300px;
-    }
-
-    .advantages {
-        width: 90%;
-        height: 200px;
-        border: 5px solid var(--button-color);
-    }
-
-    .advantage h3 {
-        font-size: 25px;
-    }
-    
-    .advantage img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .advantages-line {
-        margin: 5px;
-        width: 1px;
-        height: 150px;
-    }
 }
 
 @media (min-width: 769px) {
-
     .menu-button,
     .close {
         display: none;
