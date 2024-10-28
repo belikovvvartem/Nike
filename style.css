@@ -709,3 +709,6 @@ footer {
         background: #7E32C9;
 }
 
+.menu-button, .close {
+    display: none;
+}
